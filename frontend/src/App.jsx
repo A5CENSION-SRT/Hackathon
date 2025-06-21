@@ -2,23 +2,8 @@
 import { useState, useRef, useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
-import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
-import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import SparkleButton from './components/SparkleButton';
 import DownloadDropdownButton from './components/DownloadDropdownButton';
-
-// Public Components
-import Login from './components/Login/Login'
-
-// Protected Components  
-import Dashboard from './components/Dashboard/Dashboard'
-import Questions from './components/Questions/Questions'
-import TeamInfo from './components/TeamInfo/TeamInfo'
-import Schedule from './components/Schedule/Schedule'
-
-// Original Landing Page Components
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import lightBackground from './assets/backg.jpg'
 import documentation1 from './assets/documentation1.pdf'
 import documentation2 from './assets/documentation2.pdf'
@@ -384,30 +369,9 @@ function App() {
       <Routes>
         {/* Public Routes */}
         <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<Login />} />
         
-        {/* Protected Routes */}
-        <Route path="/dashboard" element={
-          <ProtectedRoute>
-            <Dashboard />
-          </ProtectedRoute>
-        } />
-        <Route path="/questions" element={
-          <ProtectedRoute>
-            <Questions />
-          </ProtectedRoute>
-        } />
-        <Route path="/team-info" element={
-          <ProtectedRoute>
-            <TeamInfo />
-          </ProtectedRoute>
-        } />
-        <Route path="/schedule" element={
-          <ProtectedRoute>
-            <Schedule />
-          </ProtectedRoute>
-        } />
         
+  
         {/* Redirect any unknown routes */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
