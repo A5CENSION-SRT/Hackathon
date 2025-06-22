@@ -164,7 +164,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Prelims (Online)</h3>
-                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>July 27-28, 7pm to 10pm</p>
+                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>July 27-28, 7pm to 7pm</p>
                 </div>
               </div>
               {/* Schedule Item 2 */}
@@ -174,7 +174,7 @@ const LandingPage = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="card-title text-xl sm:text-2xl font-bold text-white leading-tight mb-1" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif', fontWeight: 700 }}>Main Event (Offline)</h3>
-                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>July 29, 7am to 12pm<br/>Venue: College Auditorium</p>
+                  <p className="card-body text-base sm:text-lg text-gray-50" style={{ fontFamily: 'Nunito, Arial, Helvetica, sans-serif' }}>Further notice will be given<br/>Venue: DTH </p>
                 </div>
               </div>
             </div>
